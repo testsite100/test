@@ -151,6 +151,35 @@
     .tabs { display: flex; gap: 1rem; margin-bottom: 1.5rem; }
     .tab { padding: .4rem 1.2rem; font-size: .75rem; font-weight: 600; cursor: pointer; border: 2px solid var(--text-light); background: transparent; color: var(--text-light); }
     .tab.active { background: var(--text-light); color: var(--bg-dark); }
+    
+    /* ---------- REVIEWS ---------- */
+    #reviews {
+  padding: 4rem 1rem;
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  text-align: center;
+}
+
+#reviews h2 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.review-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.review-gallery img {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
 
     /* ---------- FOOTER ---------- */
     footer { padding: 3rem 2rem; text-align: center; font-size: .85rem; background: var(--bg-darker); color: var(--text-grey); }
