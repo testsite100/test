@@ -180,14 +180,16 @@
   border-radius: 10px;
   box-shadow: 0 0 15px rgba(0,0,0,0.4);
 }
-    @media (min-width: 900px) {
+   @media (min-width: 900px) {
+  .review-gallery {
+    gap: 2.5rem; /* Reduce spacing to allow wider items */
+    justify-content: center;
+  }
+
   .review-gallery img {
     width: auto;
-    max-width: 650px;
-    flex: 0 1 500px;
-}
-  .review-gallery {
-    gap: 3.5rem;        /* extra space between larger shots */
+    max-width: 48%; /* Try 48% to keep two per row with space */
+    flex: 1 1 48%;
   }
 }
 
