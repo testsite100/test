@@ -79,8 +79,8 @@
   align-items: center;      /* center horizontally */
 }
     .scroll-down {
-      position: relative;
-      z-index: 2;             /* ⬅️ same: must be above background */
+      position: absolute;          /* ⬅️  put it back in absolute positioning  */
+      z-index: 3;                  /* ⬅️  keep it above the background image   */
       color: white;           /* ensure arrow is visible */
       bottom: 30px;
       left: 50%;
