@@ -69,7 +69,12 @@
       inset: 0;
       background: rgba(0,0,0,.55);
     }
-    .hero-content { position: relative; z-index: 1; }
+   .hero-content {
+  /* existing styles … */
+  display: flex;
+  flex-direction: column;   /* stack headline + button */
+  align-items: center;      /* center horizontally */
+}
     .scroll-down {
       position: absolute;
       bottom: 30px;
@@ -233,16 +238,27 @@
   </header>
 
   <!-- Hero -->
-  <section class="hero" id="top">
-    <div class="hero-content">
-      <h1 style="font-size:3.5rem;font-weight:700;">Command the Ball,<br/>Command the Game</h1>
-    </div>
-    <div class="scroll-down" onclick="document.getElementById('who').scrollIntoView({behavior:'smooth'});">&#8595;</div>
-    <div style="margin-top: 1.5rem;">
-  <a href="https://dot.cards/ess_academy" target="_blank" class="glow-button">Get in Touch</a>
-</div>
+<section class="hero" id="top">
+  <div class="hero-content">
+    <h1 style="font-size:3.5rem;font-weight:700;">
+      Command the Ball,<br />Command the Game
+    </h1>
 
-  </section>
+    <!-- 🔽 put the CTA inside hero-content so flex can center it -->
+    <a href="https://dot.cards/ess_academy"
+       target="_blank"
+       class="glow-button"
+       style="margin-top:1.5rem;">
+       Get in Touch
+    </a>
+  </div>
+
+  <!-- keep the scroll arrow where it is -->
+  <div class="scroll-down"
+       onclick="document.getElementById('who').scrollIntoView({behavior:'smooth'});">
+       &#8595;
+  </div>
+</section>
 
   <!-- Who Am I -->
   <section id="who">
@@ -357,9 +373,14 @@
   </div>  
 </section>
 
-  <div style="margin-top: 3rem; text-align: center;">
-  <a href="https://dot.cards/ess_academy" target="_blank" class="glow-button">Get in Touch</a>
+ <div style="margin: 3rem 0 4rem; text-align: center;">
+  <a href="https://dot.cards/ess_academy"
+     target="_blank"
+     class="glow-button">
+     Get in Touch
+  </a>
 </div>
+
 
   <footer>
     &copy; <span id="yr"></span> ESS Academy. All rights reserved.
