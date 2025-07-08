@@ -201,6 +201,28 @@
       .slash-title { margin-bottom: 1.5rem; }
       .coach-wrap { grid-template-columns: 1fr; }
     }
+/* ---------- BUTTON---------- */
+    .glow-button {
+  display: inline-block;
+  padding: 0.75rem 1.75rem;
+  background-color: black;
+  color: #00ff44;
+  border: 2px solid #00ff44;
+  font-weight: bold;
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 8px;
+  box-shadow: 0 0 20px #00ff44;
+  transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.glow-button:hover {
+  background-color: #00ff44;
+  color: black;
+  box-shadow: 0 0 30px #00ff44, 0 0 60px #00ff44;
+}
+
   </style>
 </head>
 <body>
@@ -216,6 +238,10 @@
       <h1 style="font-size:3.5rem;font-weight:700;">Command the Ball,<br/>Command the Game</h1>
     </div>
     <div class="scroll-down" onclick="document.getElementById('who').scrollIntoView({behavior:'smooth'});">&#8595;</div>
+    <div style="margin-top: 1.5rem;">
+  <a href="https://dot.cards/ess_academy" target="_blank" class="glow-button">Get in Touch</a>
+</div>
+
   </section>
 
   <!-- Who Am I -->
@@ -330,7 +356,11 @@
     </div>
   </div>  
 </section>
-  
+
+  <div style="margin-top: 3rem; text-align: center;">
+  <a href="https://dot.cards/ess_academy" target="_blank" class="glow-button">Get in Touch</a>
+</div>
+
   <footer>
     &copy; <span id="yr"></span> ESS Academy. All rights reserved.
   </footer>
